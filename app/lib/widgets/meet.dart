@@ -1,3 +1,4 @@
+import 'package:app/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 const String rickImage =
@@ -58,8 +59,20 @@ class MeetVideo extends StatelessWidget {
         margin: EdgeInsets.all(2.0),
         child: Stack(
           children: [
-            Container(
-              child: Text(name),
+            Positioned(
+              bottom: 2,
+              left: 2,
+              child: Container(
+                padding: EdgeInsets.all(3.0),
+                decoration: BoxDecoration(
+                  color: appBg.withOpacity(0.7),
+                  borderRadius: BorderRadius.circular(3.0),
+                ),
+                child: Text(
+                  name,
+                  style: TextStyle(color: appWhite),
+                ),
+              ),
             )
           ],
         ),
