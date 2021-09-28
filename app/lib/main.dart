@@ -1,3 +1,4 @@
+import 'package:app/screens/main_screen.dart';
 import 'package:app/utils/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -10,9 +11,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: appBg,
-      ),
+      home: HomeScreen(),
     );
   }
 }
